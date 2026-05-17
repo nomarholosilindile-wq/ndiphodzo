@@ -1,0 +1,6 @@
+{
+  "name": "Ndiphodzo Cakes and Treats",
+  "description": "A premium luxury bakery website for Ndiphodzo Cakes and Treats based in Dopeni. Features organic aesthetic, customizable cake catalogs, custom orders, automated WhatsApp checkout, interactive flavor planner, and modern animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

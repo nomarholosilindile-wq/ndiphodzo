@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", "Playfair Display", "Georgia", serif;
+  --font-sans: "Montserrat", "Inter", sans-serif;
+  
+  --color-brand-cream: #FAF6F0;
+  --color-brand-choc: #2D1B18;
+  --color-brand-choc-light: #4A332E;
+  --color-brand-pink: #FAECE6;
+  --color-brand-pink-dark: #EBB5A4;
+  --color-brand-gold: #D4AF37;
+  --color-brand-rosegold: #C58B79;
+  --color-brand-beige: #F3EAE3;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-brand-cream);
+    color: var(--color-brand-choc);
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Smooth elegant scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FAF6F0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C58B79;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2D1B18;
+  }
+}
+
+/* Custom shimmering text animations and styles */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luxury-card-shadow {
+  box-shadow: 0 10px 30px -10px rgba(74, 51, 46, 0.08);
+}
+
+.luxury-card-shadow-hover {
+  box-shadow: 0 20px 40px -15px rgba(74, 51, 46, 0.15);
+}
